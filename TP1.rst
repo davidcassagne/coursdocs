@@ -2,9 +2,9 @@
 TP 1
 ****
 
-* Représentez une parabole.
+# Représentez une parabole.
 
-* Représentez sur la même figure une gaussienne et une lorentzienne.
+# Représentez sur la même figure une gaussienne et une lorentzienne.
 
 * Écrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7.
 
