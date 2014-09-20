@@ -23,14 +23,14 @@ doit donner le résultat :
 
 4. Définissez une fonction indexMax(liste) qui renvoie l'indice de l'élément ayant la valeur la plus élevée dans la liste transmise en argument. Si le même élément apparaît plusieurs fois, l'indice renvoyé est celui de la dernière occurence.
 
-**Exemple d'utilisation :**
+   **Exemple d'utilisation :**
 
-::
+   ::
 
-    serie = [5, 8, 2, 1, 9, 3, 6, 7]
-    i = indexMax(serie) 
-    print("Résultat :", i)
+       serie = [5, 8, 2, 1, 9, 3, 6, 7]
+       i = indexMax(serie) 
+       print("Résultat :", i)
 
-::
+   ::
 
-    Résultat : 4
+       Résultat : 4
