@@ -10,13 +10,13 @@ TP 1
 
 4. Écrivez un programme qui affiche une table de conversion de sommes d'argent exprimées en euros, en dollars canadiens. La progression des sommes de la table sera « géométrique », comme dans l'exemple ci-dessous :
 
-::
+   ::
 
-     1 euro(s) = 1.65 dollar(s)
-     2 euro(s) = 3.30 dollar(s)
-     4 euro(s) = 6.60 dollar(s)
-     8 euro(s) = 13.20 dollar(s)
-     etc. (S'arrêter à 16384 euros)
+        1 euro(s) = 1.65 dollar(s)
+        2 euro(s) = 3.30 dollar(s)
+        4 euro(s) = 6.60 dollar(s)
+        8 euro(s) = 13.20 dollar(s)
+        etc. (S'arrêter à 16384 euros)
 
 5. Écrivez un programme qui affiche une suite de 12 nombres dont chaque terme est égal au triple du terme précédent.
 
@@ -26,19 +26,19 @@ TP 1
 
 8. Ecrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7, en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
 
-Exemple : 7 14 21 * 28 35 42 * 49
+   Exemple : 7 14 21 * 28 35 42 * 49
 
 9. Ecrivez un programme qui affiche la suite de symboles suivante :
 
-::
+   ::
 
-    * 
-    * * 
-    * * * 
-    * * * * 
-    * * * * * 
-    * * * * * * 
-    * * * * * * * 
+       * 
+       * * 
+       * * * 
+       * * * * 
+       * * * * * 
+       * * * * * * 
+       * * * * * * * 
 
 Ces exercices sont en partie extraits du livre **Apprendre à programmer avec Python** de *Gérard Swinnen* disponible en licence `Creative Commons BY-NC-SA 2.0 FR <http://creativecommons.org/licenses/by-nc-sa/2.0/fr/>`_ 
 Paternité - Pas d'utilisation commerciale - Partage des conditions initiales à l'identique.
