@@ -13,13 +13,13 @@ TP Fonctions
 
 3. Définissez une fonction volBoite(x1,x2,x3) qui renvoie le volume d'une boîte parallélipipédique dont on fournit les trois dimensions x1, x2, x3 en arguments. Par exemple, l'exécution de l'instruction :
 
->>> print(volBoite(5.2, 7.7, 3.3)) 
+   >>> print(volBoite(5.2, 7.7, 3.3)) 
 
-doit donner le résultat :
+   doit donner le résultat :
 
-::
+   ::
 
-   132.13
+      132.13
 
 4. Définissez une fonction indexMax(liste) qui renvoie l'indice de l'élément ayant la valeur la plus élevée dans la liste transmise en argument. Si le même élément apparaît plusieurs fois, l'indice renvoyé est celui de la dernière occurence.
 
