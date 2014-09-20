@@ -11,7 +11,7 @@ TP Fonctions
 
    doit afficher la surface du cercle.
 
-3.  Définissez une fonction volBoite(x1,x2,x3) qui renvoie le volume d'une boîte parallélipipédique dont on fournit les trois dimensions x1, x2, x3 en arguments. Par exemple, l'exécution de l'instruction :
+3. Définissez une fonction volBoite(x1,x2,x3) qui renvoie le volume d'une boîte parallélipipédique dont on fournit les trois dimensions x1, x2, x3 en arguments. Par exemple, l'exécution de l'instruction :
 
    >>> print(volBoite(5.2, 7.7, 3.3)) 
 
