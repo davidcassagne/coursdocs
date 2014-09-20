@@ -6,10 +6,10 @@ TP Fonctions
 
 2. Définissez une fonction surfCercle(R). Cette fonction doit renvoyer la surface (l'aire) d'un cercle dont on lui a fourni le rayon R en argument. Par exemple, l'exécution de l'instruction :
 
->>> a = surfCercle(2.5)
->>> print("la surface vaut", a)
+   >>> a = surfCercle(2.5)
+   >>> print("la surface vaut", a)
 
-doit afficher la surface du cercle.
+   doit afficher la surface du cercle.
 
 3. Définissez une fonction volBoite(x1,x2,x3) qui renvoie le volume d'une boîte parallélipipédique dont on fournit les trois dimensions x1, x2, x3 en arguments. Par exemple, l'exécution de l'instruction :
 
