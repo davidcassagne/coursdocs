@@ -22,8 +22,7 @@ TP 1
 
 6. Ecrivez un programme qui calcule le volume d'un parallélépipède rectangle pour lequel sont fournis au départ la largeur, la hauteur et la profondeur.
 
-7. Ecrivez un programme qui convertisse un nombre entier de secondes fourni au départ, en un nombre de jours, d'heures, de minutes et de secondes.
-(Utilisez l'opérateur modulo : % ).
+7. Ecrivez un programme qui convertisse un nombre entier de secondes fourni au départ, en un nombre de jours, d'heures, de minutes et de secondes (utilisez l'opérateur modulo : %).
 
 8. Ecrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7, en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
 
