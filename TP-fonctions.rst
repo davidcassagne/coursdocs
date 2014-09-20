@@ -39,3 +39,5 @@ Ces exercices sont en partie extraits du livre **Apprendre à programmer avec Py
 Paternité - Pas d'utilisation commerciale - Partage des conditions initiales à l'identique.
 
 Vous pourrez trouver d'autres exercices dans son édition en ligne à l'adresse suivante :
+
+http://python.developpez.com/cours/apprendre-python3/?page=page_9
