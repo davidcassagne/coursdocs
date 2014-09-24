@@ -1,6 +1,6 @@
-*******************
-Marche aléatoire 1D
-*******************
+**********************
+TP Marche aléatoire 1D
+**********************
 
 Nous allons considérer le cas simple d'un marcheur qui fait des pas de longueur unité le long d'un axe. 
 
