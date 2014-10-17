@@ -12,4 +12,4 @@ la droite ou la gauche avec une probabilité :math:`1/2` pour chaque cas. Si le 
 
 #. Tracer la courbe qui représente le carré de la distance du marcheur par rapport à l'origne en fonction du temps.
 
-#. Tracer la courbe qui représente la moyenne du carré de la distance du marcheur par rapport à l'origne en fonction du temps si on réalise 500 marches au hasard.
+#. On considère à présent que l'on a 500 marcheurs. On pourrait donc tracer 500 courbes comme celle de la question précédente. Il vous est demandé de tracer une seule courbe qui correspond à la moyenne de ces 500 courbes. Vous devez donc tracer la courbe qui représente la moyenne du carré de la distance des marcheurs par rapport à l'origne en fonction du temps.
