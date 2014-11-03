@@ -7,11 +7,59 @@ La notion d'héritage
 
 Nous disposons de la classe de base suivante :
 
-.. literalinclude:: heritage/heritage1.py
+::
+
+    class Point:
+        x = 0
+        y = 0
+    
+        def initialise(self, x, y):
+            self.x = x
+            self.y = y
+            
+        def deplace(self, dx, dy):
+            self.x = self.x + dx
+            self.y = self.y + dy
+           
+        def affiche(self):
+            print "Je suis un point de coordonnees", self.x, self.y
 
 Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres de sa classe de base".
 
-.. literalinclude:: heritage/heritage2.py
+::
+
+    class Point:
+        x = 0
+        y = 0
+    
+        def initialise(self, x, y):
+            self.x = x;
+            self.y = y;
+            
+        def deplace(self, dx, dy):
+            self.x = self.x + dx
+            self.y = self.y + dy
+           
+        def affiche(self):
+            print "Je suis un point de coordonnees", self.x, self.y
+    
+    class PointCol(Point):
+        couleur = "jaune"
+        
+        def colore(self, couleur):
+            self.couleur = couleur 
+    
+    pc = PointCol()
+    pc.affiche() # on peut utiliser la methode affiche pour un objet de type PointCol
+    pc.initialise(3, 5)
+    pc.affiche()
+    pc.colore("rouge")
+    pc.deplace(2, -1)
+    pc.affiche()
+    
+    p = Point()
+    p.initialise(6, 9)
+    p.affiche()
 
 La notion de redéfinition (ou surcharge)
 ========================================
@@ -20,17 +68,117 @@ La redéfinition désigne la définition dans une classe dérivée d'une méthod
 
 Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer de faire un appel récursif de la méthode de la classe dérivée, on utilise le nom de la classe de base suivi d'un point, il faut également remettre self dans les arguments de la méthode de la classe de base à appeler.
 
-.. literalinclude:: heritage/heritage3.py
+::
+
+    class Point:
+        x = 0
+        y = 0
+    
+        def initialise(self, x, y):
+            self.x = x
+            self.y = y
+    
+        def deplace(self, dx, dy):
+            self.x = self.x + dx
+            self.y = self.y + dy
+    
+        def affiche(self):
+            print "Je suis un point de coordonnees", self.x, self.y
+    
+    class PointCol(Point):
+        couleur = "jaune"
+    
+        def colore(self, couleur):
+            self.couleur = couleur
+    
+        def initialise(self, x, y, couleur): # cette methode remplace celle de la classe de base
+            Point.initialise(self, x, y) # on appelle la methode de la classe de base
+            self.couleur = couleur
+    
+        def affiche(self):
+            Point.affiche(self)
+            print "  et ma couleur est :", self.couleur
+    
+    pc = PointCol()
+    pc.initialise(3, 5, "vert")
+    pc.affiche()
+    pc.deplace(1, -3)
+    pc.affiche()
 
 Exemple avec constructeurs
 ==========================
 
-.. literalinclude:: heritage/heritage4.py
+::
 
+    class Point:
+    
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+    
+        def deplace(self, dx, dy):
+            self.x = self.x + dx
+            self.y = self.y + dy
+    
+        def affiche(self):
+            print "Je suis un point de coordonnees", self.x, self.y
+    
+    class PointCol(Point):
+    
+        def colore(self, couleur):
+            self.couleur = couleur
+    
+        def __init__(self, x, y, couleur): 
+            Point.__init__(self, x, y) # on appelle le constructeur de la classe de base
+            self.couleur = couleur
+    
+        def affiche(self):
+            Point.affiche(self)
+            print "  et ma couleur est :", self.couleur
+    
+    pc = PointCol(3, 5, "vert")
+    pc.affiche()
+    pc.deplace(1, -3)
+    pc.affiche()
+    
 Le polymorphisme
 ================
 
-.. literalinclude:: heritage/heritage5.py
+::
+
+    class Point:
+    
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+    
+        def deplace(self, dx, dy):
+            self.x = self.x + dx
+            self.y = self.y + dy
+    
+        def affiche(self):
+            print "Je suis un point de coordonnees", self.x, self.y
+    
+    class PointCol(Point):
+    
+        def colore(self, couleur):
+            self.couleur = couleur
+    
+        def __init__(self, x, y, couleur):
+            Point.__init__(self, x, y)
+            self.couleur = couleur
+    
+        def affiche(self):
+            Point.affiche(self)
+            print "  et ma couleur est :", self.couleur
+    
+    t= [PointCol(3, 5, "vert"), Point(2, 6)]
+    
+    for i in [0, 1]:
+        print "i =", i
+        t[i].affiche()
+        t[i].deplace(1, -3)
+        t[i].affiche()
 
 .. seealso::
 
@@ -58,15 +206,15 @@ On dispose de la classe suivante :
             self.__x = self.__x + dx
             self.__y = self.__y + dy
         
-        def getX(self):
+        def get_x(self):
             return self.__x
         
-        def getY(self):
+        def get_y(self):
             return self.__y
 
-Dans un fichier nommé TestPointA.py, réaliser une classe PointA, dérivée de Point disposant d'une méthode affiche affichant les coordonnées d'un point. Ecrire un petit programme utilisant les deux classes Point et PointA.
+Dans un fichier nommé test_PointA.py, réaliser une classe PointA, dérivée de Point disposant d'une méthode affiche affichant les coordonnées d'un point. Ecrire un petit programme utilisant les deux classes Point et PointA.
 
-Que se passerait-il si la classe Point ne disposait pas des méthodes getX et getY.
+Que se passerait-il si la classe Point ne disposait pas des méthodes get_x et get_y.
 
 Exercice 2 : Définition d'une classe dérivée, droit d'accès (2)
 ---------------------------------------------------------------
@@ -90,11 +238,11 @@ On dispose de la classe suivante :
         def affCoord(self):
             print "Coordonnees : ", self.__x, self.__y
 
-Dans un fichier nommé TestPointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
+Dans un fichier nommé testPointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
-    * setPointNom pour définir les coordonnées et le nom d'un objet de type PointNom,
-    * setNom pour définir seulement le nom d'un tel objet,
-    * affCoordNom pour afficher les coordonnées et le nom d'un objet de type PointNom.
+    * set_PointNom pour définir les coordonnées et le nom d'un objet de type PointNom,
+    * set_nom pour définir seulement le nom d'un tel objet,
+    * aff_coord_nom pour afficher les coordonnées et le nom d'un objet de type PointNom.
 
 Ecrire un petit programme utilisant la classe PointNom. Créer notamment un objet de type PointNom et appliquer lui toutes les méthodes possibles.
 
@@ -110,13 +258,13 @@ On dispose de la classe suivante (disposant cette fois d'un constructeur) :
             self.__x = x
             self.__y = y
             
-        def affCoord(self):
+        def aff_coord(self):
             print "Coordonnees : ", self.__x, self.__y
 
 Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
     * constructeur pour définir les coordonnées et le nom d'un objet de type PointNom,
-    * affCoordNom pour afficher les coordonnées et le nom d'un objet de type PointNom.
+    * aff_coord_nom pour afficher les coordonnées et le nom d'un objet de type PointNom.
 
 Ecrire un petit programme utilisant la classe PointNom.
 
