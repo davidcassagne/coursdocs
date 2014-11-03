@@ -175,7 +175,7 @@ Le polymorphisme
     t= [PointCol(3, 5, "vert"), Point(2, 6)]
     
     for i in [0, 1]:
-        print "i =", i
+        print("i =", i)
         t[i].affiche()
         t[i].deplace(1, -3)
         t[i].affiche()
