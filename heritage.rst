@@ -22,7 +22,7 @@ Nous disposons de la classe de base suivante :
             self.y = self.y + dy
            
         def affiche(self):
-            print "Je suis un point de coordonnees", self.x, self.y
+            print("Je suis un point de coordonnees", self.x, self.y)
 
 Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres de sa classe de base".
 
@@ -41,7 +41,7 @@ Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres 
             self.y = self.y + dy
            
         def affiche(self):
-            print "Je suis un point de coordonnees", self.x, self.y
+            print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
         couleur = "jaune"
@@ -83,7 +83,7 @@ Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer
             self.y = self.y + dy
     
         def affiche(self):
-            print "Je suis un point de coordonnees", self.x, self.y
+            print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
         couleur = "jaune"
@@ -97,7 +97,7 @@ Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer
     
         def affiche(self):
             Point.affiche(self)
-            print "  et ma couleur est :", self.couleur
+            print("  et ma couleur est :", self.couleur)
     
     pc = PointCol()
     pc.initialise(3, 5, "vert")
@@ -121,7 +121,7 @@ Exemple avec constructeurs
             self.y = self.y + dy
     
         def affiche(self):
-            print "Je suis un point de coordonnees", self.x, self.y
+            print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
     
@@ -134,7 +134,7 @@ Exemple avec constructeurs
     
         def affiche(self):
             Point.affiche(self)
-            print "  et ma couleur est :", self.couleur
+            print("  et ma couleur est :", self.couleur)
     
     pc = PointCol(3, 5, "vert")
     pc.affiche()
@@ -157,7 +157,7 @@ Le polymorphisme
             self.y = self.y + dy
     
         def affiche(self):
-            print "Je suis un point de coordonnees", self.x, self.y
+            print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
     
@@ -170,7 +170,7 @@ Le polymorphisme
     
         def affiche(self):
             Point.affiche(self)
-            print "  et ma couleur est :", self.couleur
+            print("  et ma couleur est :", self.couleur)
     
     t= [PointCol(3, 5, "vert"), Point(2, 6)]
     
