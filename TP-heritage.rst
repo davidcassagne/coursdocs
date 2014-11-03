@@ -50,7 +50,7 @@ On dispose de la classe suivante :
             self.__y = self.__y + dy
         
         def affCoord(self):
-            print "Coordonnees : ", self.__x, self.__y
+            print("Coordonnees : ", self.__x, self.__y)
 
 Dans un fichier nommé testPointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
@@ -73,7 +73,7 @@ On dispose de la classe suivante (disposant cette fois d'un constructeur) :
             self.__y = y
             
         def aff_coord(self):
-            print "Coordonnees : ", self.__x, self.__y
+            print("Coordonnees : ", self.__x, self.__y)
 
 Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
@@ -95,7 +95,7 @@ On dispose de la classe suivante :
             self.__y = y
             
         def affiche(self):
-            print "Coordonnees : ", self.__x, self.__y
+            print("Coordonnees : ", self.__x, self.__y)
 
 Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
