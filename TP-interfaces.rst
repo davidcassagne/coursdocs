@@ -10,7 +10,7 @@ TP Interfaces graphiques
 
    Ecrire un programme qui crée plusieurs fenêtres repérées par un numéro et qui détecte les événements "appui" et "relâchement" du bouton gauche de la souris associés à chacune de ces fenêtres. On signalera chaque événement en affichant un message précisant la nature (appui ou relâchement), le numéro de la fenêtre et les coordonnées correspondantes.
 
-#. Champs de texte
+#. Champ de texte
 
    Dans un fichier nommé calcul_carre_bouton.py, écrire un programme qui permet à l'utilisateur de saisir un nombre entier dans un champ texte et qui en affiche le carré lorsqu'il agit sur un bouton marqué "CALCUL".
 
