@@ -38,7 +38,7 @@ On dispose de la classe suivante :
         __x = 0
         __y = 0
         
-        def setPoint(self, x, y):
+        def set_point(self, x, y):
             self.__x = x
             self.__y = y
          
@@ -46,12 +46,12 @@ On dispose de la classe suivante :
             self.__x = self.__x + dx
             self.__y = self.__y + dy
         
-        def affCoord(self):
+        def aff_coord(self):
             print("Coordonnees : ", self.__x, self.__y)
 
-Dans un fichier nommé testPointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
+Dans un fichier nommé test_PointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
-    * set_PointNom pour définir les coordonnées et le nom d'un objet de type PointNom,
+    * set_point_nom pour définir les coordonnées et le nom d'un objet de type PointNom,
     * set_nom pour définir seulement le nom d'un tel objet,
     * aff_coord_nom pour afficher les coordonnées et le nom d'un objet de type PointNom.
 
