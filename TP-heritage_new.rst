@@ -23,7 +23,7 @@ On dispose de la classe suivante :
         def get_y(self):
             return self.__y
 
-Dans un fichier nommé test_PointA.py, réaliser une classe PointA, dérivée de Point disposant d'une méthode affiche affichant les coordonnées d'un point. Ecrire un petit programme utilisant les deux classes Point et PointA.
+Réaliser une classe PointA, dérivée de Point disposant d'une méthode affiche() affichant les coordonnées d'un point. Ecrire un petit programme utilisant les deux classes Point et PointA.
 
 Que se passerait-il si la classe Point ne disposait pas des méthodes get_x() et get_y().
 
@@ -49,7 +49,7 @@ On dispose de la classe suivante :
         def aff_coord(self):
             print("Coordonnees : ", self.__x, self.__y)
 
-Dans un fichier nommé test_PointNom.py, réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
+Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
     * set_point_nom pour définir les coordonnées et le nom d'un objet de type PointNom,
     * set_nom pour définir seulement le nom d'un tel objet,
