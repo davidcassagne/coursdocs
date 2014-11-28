@@ -172,7 +172,7 @@ Le polymorphisme
             Point.affiche(self)
             print("  et ma couleur est :", self.couleur)
     
-    t= [PointCol(3, 5, "vert"), Point(2, 6), , Point(4, 3), PointCol(1, 7, "bleu")]
+    t = [PointCol(3, 5, "vert"), Point(2, 6), , Point(4, 3), PointCol(1, 7, "bleu")]
     
     for i in range(len(t)):
         print("i =", i)
