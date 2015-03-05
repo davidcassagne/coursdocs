@@ -1,4 +1,8 @@
-I - Densité d'état à 2D
+******************************
+TD Calcul des densités d'états
+******************************
+
+I - Densité d'états à 2D
 
 Pour un métal 2D de taille LxL
 
@@ -18,6 +22,6 @@ Pour un métal 2D de taille LxL
 
 4) Calculer D(E)
 
-II - Densité d'état à 1D
+II - Densité d'états à 1D
 
 Mêmes questions que pour I mais pour un métal 1D de taille L
