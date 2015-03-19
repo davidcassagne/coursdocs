@@ -3,8 +3,8 @@
 3) Déterminer la maille de Wigner Seitz
 
 On considère à présent un réseau hexagonal 2D de côté a
-a) déterminer la maille de Wigner Seitz
-b) Déterminer des vecteurs primitifs pour un réseaux hexagonal de côté a
-c) Déterminer les vecteurs de base du réseau réciproque (indice : pour le 3ème vecteur on prendra a3 = ez)
-d) Déterminer le réseau réciproque
-e) Déterminer la maille de Wigner Seitz du réseau réciproque
+1) déterminer la maille de Wigner Seitz
+2) Déterminer des vecteurs primitifs pour un réseaux hexagonal de côté a
+3) Déterminer les vecteurs de base du réseau réciproque (indice : pour le 3ème vecteur on prendra a3 = ez)
+4) Déterminer le réseau réciproque
+5) Déterminer la maille de Wigner Seitz du réseau réciproque
