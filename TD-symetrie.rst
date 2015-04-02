@@ -1,3 +1,6 @@
+TD Symétrie
+***********
+
 1) Déterminer le réseau de Bravais pour chacune des structures.
 2) Déterminer une maille primitive 
 3) Déterminer la maille de Wigner Seitz
