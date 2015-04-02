@@ -1,12 +1,19 @@
-TD Symétrie
-***********
-I) Pour la feuille distribuée
+TD 4 Symétrie
+*************
+
+Exercice 1
+----------
+
+Pour la feuille distribuée
 
 1) Déterminer le réseau de Bravais pour chacune des structures.
 2) Déterminer une maille primitive 
 3) Déterminer la maille de Wigner Seitz
 
-II) On considère à présent un réseau hexagonal 2D de côté a
+Exercice 2
+----------
+
+On considère à présent un réseau hexagonal 2D de côté a
 
 1) déterminer la maille de Wigner Seitz
 2) Déterminer des vecteurs primitifs
