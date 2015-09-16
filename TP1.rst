@@ -36,6 +36,20 @@ TP 1
        1 2 3 4 5 6 
        1 2 3 4 5 6 7
        
+
+#. Ecrivez un programme qui affiche la suite de chiffres suivante :
+
+   ::
+
+       1 2 3 4 5 6 7
+       1 2 3 4 5 6 
+       1 2 3 4 5
+       1 2 3 4 
+       1 2 3 
+       1 2 
+       1 
+
+
 #. Représentez une parabole.
 
 #. Représentez sur la même figure une gaussienne et une lorentzienne.
