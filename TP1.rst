@@ -24,17 +24,17 @@ TP 1
 
    Exemple : 7 14 21 * 28 35 42 * 49
 
-#. Ecrivez un programme qui affiche la suite de symboles suivante :
+#. Ecrivez un programme qui affiche la suite de chiffres suivante :
 
    ::
 
-       * 
-       * * 
-       * * * 
-       * * * * 
-       * * * * * 
-       * * * * * * 
-       * * * * * * * 
+       1 
+       1 2 
+       1 2 3 
+       1 2 3 4 
+       1 2 3 4 5
+       1 2 3 4 5 6 
+       1 2 3 4 5 6 7
        
 #. Représentez une parabole.
 
