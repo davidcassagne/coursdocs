@@ -33,7 +33,7 @@ Modifiez la classe Livre :
 Exercice 2 : Création et utilisation d'une classe simple
 ========================================================
                                                                                                                                               
-Réaliser une classe Point_axe permettant de représenter un point sur un axe. Chaque point sera caractérisé par un nom et une abscisse. On prévoira :
+Réaliser une classe PointAxe permettant de représenter un point sur un axe. Chaque point sera caractérisé par un nom et une abscisse. On prévoira :
 
     * un constructeur recevant en arguments le nom et l'abscisse d'un point,
     * une méthode affiche qui affiche le nom du point et son abscisse,
