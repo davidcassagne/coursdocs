@@ -10,17 +10,14 @@ Nous disposons de la classe de base suivante :
 ::
 
     class Point:
-        x = 0
-        y = 0
-    
-        def initialise(self, x, y):
+        def __init__(self, x, y):
             self.x = x
             self.y = y
-            
+    
         def deplace(self, dx, dy):
             self.x = self.x + dx
             self.y = self.y + dy
-           
+    
         def affiche(self):
             print("Je suis un point de coordonnees", self.x, self.y)
 
@@ -29,17 +26,14 @@ Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres 
 ::
 
     class Point:
-        x = 0
-        y = 0
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
     
-        def initialise(self, x, y):
-            self.x = x;
-            self.y = y;
-            
         def deplace(self, dx, dy):
             self.x = self.x + dx
             self.y = self.y + dy
-           
+    
         def affiche(self):
             print("Je suis un point de coordonnees", self.x, self.y)
     
@@ -49,16 +43,13 @@ Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres 
         def colore(self, couleur):
             self.couleur = couleur 
     
-    pc = PointCol()
-    pc.affiche() # on peut utiliser la methode affiche pour un objet de type PointCol
-    pc.initialise(3, 5)
+    pc = PointCol(3, 5)
     pc.affiche()
     pc.colore("rouge")
     pc.deplace(2, -1)
     pc.affiche()
     
-    p = Point()
-    p.initialise(6, 9)
+    p = Point(6, 9)
     p.affiche()
 
 La notion de redéfinition (ou surcharge)
@@ -71,47 +62,6 @@ Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer
 ::
 
     class Point:
-        x = 0
-        y = 0
-    
-        def initialise(self, x, y):
-            self.x = x
-            self.y = y
-    
-        def deplace(self, dx, dy):
-            self.x = self.x + dx
-            self.y = self.y + dy
-    
-        def affiche(self):
-            print("Je suis un point de coordonnees", self.x, self.y)
-    
-    class PointCol(Point):
-        couleur = "jaune"
-    
-        def colore(self, couleur):
-            self.couleur = couleur
-    
-        def initialise(self, x, y, couleur): # cette methode remplace celle de la classe de base
-            Point.initialise(self, x, y) # on appelle la methode de la classe de base
-            self.couleur = couleur
-    
-        def affiche(self):
-            Point.affiche(self)
-            print("  et ma couleur est :", self.couleur)
-    
-    pc = PointCol()
-    pc.initialise(3, 5, "vert")
-    pc.affiche()
-    pc.deplace(1, -3)
-    pc.affiche()
-
-Exemple avec constructeurs
-==========================
-
-::
-
-    class Point:
-    
         def __init__(self, x, y):
             self.x = x
             self.y = y
