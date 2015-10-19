@@ -46,7 +46,7 @@ On dispose de la classe suivante (disposant cette fois d'un constructeur) :
 Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
     * constructeur pour définir les coordonnées et le nom d'un objet de type PointNom,
-    * aff_coord_nom pour afficher les coordonnées et le nom d'un objet de type PointNom.
+    * **aff_coord_nom** pour afficher les coordonnées et le nom d'un objet de type PointNom.
 
 Ecrire un petit programme utilisant la classe PointNom.
 
@@ -68,7 +68,7 @@ On dispose de la classe suivante :
 Réaliser une classe PointNom, dérivée de Point permettant de manipuler des points définis par deux coordonnées et un nom. On y prévoira les méthodes suivantes :
 
     * constructeur pour définir les coordonnées et le nom d'un objet de type PointNom,
-    * affiche pour afficher les coordonnées et le nom d'un objet de type PointNom.
+    * **affiche** pour afficher les coordonnées et le nom d'un objet de type PointNom.
 
-Ecrire un petit programme utilisant la classe PointNom.
+Ecrire un petit programme utilisant les classes Point et PointNom. On créera une liste comprenant des objets de type Point et PointNom, puis une boucle qui utilisera la methode affiche pour chacun des éléments de la liste.
  
