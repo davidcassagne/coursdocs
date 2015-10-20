@@ -38,8 +38,6 @@ Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres 
             print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
-        couleur = "jaune"
-        
         def colore(self, couleur):
             self.couleur = couleur 
     
@@ -74,8 +72,7 @@ Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer
             print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
-    
-        def colore(self, couleur):
+          def colore(self, couleur):
             self.couleur = couleur
     
         def __init__(self, x, y, couleur): 
