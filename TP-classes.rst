@@ -22,13 +22,13 @@ Dans le programme principal :
 
 Modifiez la classe Livre :
 
-* Ajoutez un accesseur pour la variable titre et la variable nb_pages.
+* Ajouter un accesseur pour la variable titre et la variable nb_pages.
 * Ajouter un mutateur pour les variables auteur et titre.
 * Créer un mutateur pour nb_pages : il ne devra changer le nombre de pages que si on lui passe en paramètre un nombre positif, et ne rien faire sinon, en affichant un message d'erreur. On remarquera l'intérêt des variables privées : on peut contrôler leur modification dans les éventuelles méthodes qui permettent de les modifier.
 * Dans le programme principal,
-      * modifiez le nombre de pages de chacun des 2 livres,
-      * faites afficher ces nombres de pages,
-      * calculez le nombre de pages total de ces 2 livres et affichez-le.
+      * modifier le nombre de pages de chacun des 2 livres,
+      * faire afficher ces nombres de pages,
+      * calculer le nombre de pages total de ces 2 livres et affichez-le.
 
 Exercice 2 : Création et utilisation d'une classe simple
 ========================================================
@@ -39,7 +39,7 @@ Réaliser une classe PointAxe permettant de représenter un point sur un axe. Ch
     * une méthode affiche qui affiche le nom du point et son abscisse,
     * une méthode translate effectuant une translation définie par la valeur de son argument.
 
-Dans une fichier nommé test_point_axe.py écrire un petit programme utilisant cette classe pour créer un point, en afficher les caractéristiques, le déplacer et en afficher à nouveau les caractéristiques.
+Dans une fichier nommé test_point_axe.py, écrire un petit programme utilisant cette classe pour créer un point, en afficher les caractéristiques, le déplacer et en afficher à nouveau les caractéristiques.
 
 Exercice 3 : Attributs et méthodes de classe
 ============================================
