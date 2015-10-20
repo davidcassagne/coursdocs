@@ -40,12 +40,16 @@ Nous allons voir que "Un objet d'une classe dérivée peut accéder aux membres 
     class PointCol(Point):
         def colore(self, couleur):
             self.couleur = couleur 
+            
+        def affiche_couleur(self):
+            print("ma couleur est :", self.couleur)
     
     pc = PointCol(3, 5)
     pc.affiche()
     pc.colore("rouge")
     pc.deplace(2, -1)
     pc.affiche()
+    pc.affiche_couleur()
     
     p = Point(6, 9)
     p.affiche()
