@@ -1,8 +1,8 @@
 TP - L'héritage et le polymorphisme
 ===================================
 
-Exercice 1 : Définition d'une classe dérivée, droits d'accès (1)
-----------------------------------------------------------------
+Exercice 1 : Définition d'une classe dérivée, droits d'accès
+------------------------------------------------------------
 
 On dispose de la classe suivante :
 
@@ -25,7 +25,7 @@ On dispose de la classe suivante :
 
 Réaliser une classe PointA, dérivée de Point disposant d'une méthode affiche() affichant les coordonnées d'un point. Ecrire un petit programme utilisant les deux classes Point et PointA.
 
-Que se passerait-il si la classe Point ne disposait pas des méthodes get_x() et get_y().
+Que se passerait-il si la classe Point ne disposait pas des méthodes get_x() et get_y() ?
 
 
 Exercice 2 : Héritage et appel de constructeurs
