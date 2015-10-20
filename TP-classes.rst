@@ -5,7 +5,7 @@ TP Classes et objets
 Exercice 1
 ==========
 
-Créer une classe Livre qui dispose de trois attributs privés :
+Créer une classe Livre qui dispose de trois attributs **privés** :
 
 * titre et auteur
 * nb_pages : qui contient le nombre de page
