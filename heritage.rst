@@ -76,13 +76,13 @@ Pour pouvoir faire un appel d'un méthode de la classe de base et ne pas risquer
             print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
-          def colore(self, couleur):
-            self.couleur = couleur
-    
         def __init__(self, x, y, couleur): 
             Point.__init__(self, x, y) # on appelle le constructeur de la classe de base
             self.couleur = couleur
-    
+            
+        def colore(self, couleur):
+            self.couleur = couleur
+
         def affiche(self):
             Point.affiche(self)
             print("  et ma couleur est :", self.couleur)
@@ -98,7 +98,6 @@ Le polymorphisme
 ::
 
     class Point:
-    
         def __init__(self, x, y):
             self.x = x
             self.y = y
@@ -111,14 +110,13 @@ Le polymorphisme
             print("Je suis un point de coordonnees", self.x, self.y)
     
     class PointCol(Point):
-    
-        def colore(self, couleur):
-            self.couleur = couleur
-    
         def __init__(self, x, y, couleur):
             Point.__init__(self, x, y)
             self.couleur = couleur
     
+        def colore(self, couleur):
+            self.couleur = couleur
+
         def affiche(self):
             Point.affiche(self)
             print("  et ma couleur est :", self.couleur)
