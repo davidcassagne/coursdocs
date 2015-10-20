@@ -8,12 +8,12 @@ Exercice 1
 Créer une classe Livre qui dispose de trois attributs **privés** :
 
 * titre et auteur
-* nb_pages : qui contient le nombre de page
+* nb_pages : qui contient le nombre de pages
 
 On définira :
 
 * un constructeur
-* une méthode affiche qui affiche l'ensemble des informations sur un livre (auteur, titre, nombre de pages)
+* une méthode **affiche()** qui affiche l'ensemble des informations sur un livre (auteur, titre, nombre de pages)
 
 Dans le programme principal :
 
