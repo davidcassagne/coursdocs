@@ -13,7 +13,7 @@ Pour la feuille distribuée
 Exercice 2
 ----------
 
-On considère à présent un réseau hexagonal 2D de côté a
+On considère à présent un réseau triangulaire 2D de côté a
 
 1) déterminer la maille de Wigner Seitz
 2) Déterminer des vecteurs primitifs
