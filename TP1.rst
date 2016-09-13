@@ -50,10 +50,6 @@ TP 1
        1 
 
 
-#. Représentez une parabole.
-
-#. Représentez sur la même figure une gaussienne et une lorentzienne.
-
 
 Ces exercices sont en partie extraits du livre **Apprendre à programmer avec Python** de *Gérard Swinnen* disponible en licence `Creative Commons BY-NC-SA 2.0 FR <http://creativecommons.org/licenses/by-nc-sa/2.0/fr/>`_ 
 Paternité - Pas d'utilisation commerciale - Partage des conditions initiales à l'identique.
