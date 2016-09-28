@@ -2,7 +2,7 @@
 TP Fonctions
 ************
 
-#. Définissez une fonction ``ligne_car(n, ca)`` qui renvoie une chaîne de ``n`` caractères ``ca``. ``ca`` fait référence à une chaîne de caractères qui contient un seul caractère.  
+#. Définissez une fonction ``ligne_car(n, ca)`` qui **renvoie** une chaîne de ``n`` caractères ``ca``. ``ca`` fait référence à une chaîne de caractères qui contient un seul caractère.  
 
 #. Définissez une fonction ``surf_cercle(R)``. Cette fonction doit renvoyer la surface (l'aire) d'un cercle dont on lui a fourni le rayon R en argument. Par exemple, l'exécution de l'instruction :
 
