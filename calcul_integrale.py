@@ -6,6 +6,7 @@ Created on Wed Sep 28 08:48:00 2016
 """
 
 import numpy as np
+from scipy.integrate import simps
 
 xmin = 0
 xmax = 3*np.pi/2
@@ -50,3 +51,4 @@ print("integrale2sum_b =", integrale2sum_b)
 integrale3sum = ( y[0] + y[nbx-1] + 4*np.sum(y[1:nbx-1:2]) +
                   2*np.sum(y[2:nbx-1:2]) )*h/3
 print("integrale3sum =", integrale3sum)
+print("scipy.integrate.simps =", simps(y,x))
