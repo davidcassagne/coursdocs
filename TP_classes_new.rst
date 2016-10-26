@@ -43,7 +43,7 @@ Dans une fichier nommé test_point_axe.py, écrire un petit programme utilisant 
 
 Exercice 3 : Attributs et méthodes de classe
 ============================================
-Dans un fichier nommé test_origine.py, créer une classe permettant de manipuler un point d'un axe, repéré par une abscisse. On devra pouvoir effectuer des changements d'origine, en conservant en permanence l'abscisse d'une origine courante (initialement 0). On prévoira simplement les méthodes suivantes :
+Dans un fichier nommé test_origine.py, créer une classe Point permettant de manipuler un point d'un axe, repéré par une abscisse. On devra pouvoir effectuer des changements d'origine, en conservant en permanence l'abscisse d'une origine courante (initialement 0). On prévoira simplement les méthodes suivantes :
 
 * constructeur, recevant en argument l'abscisse "absolue" du point (c'est-à-dire repérée par rapport au point d'origine 0 et non par rapport à l'origine courante),
 * affiche qui imprime à la fois l'abscisse absolue de l'origine courante et l'abscisse du point par rapport à cette origine,
@@ -52,12 +52,12 @@ Dans un fichier nommé test_origine.py, créer une classe permettant de manipule
 
 Ecrire un petit programme de test qui utilise set_origine en tant que méthode de classe et qui fournit les résultats suivants::
 
-    Point a - abscisse = 3
-            relative à une origine d'abscisse absolue 0
-    Point b - abscisse = 12
-            relative à une origine d'abscisse absolue 0
+    Point a
+    abscisse = 3 relative à une origine d'abscisse absolue 0
+    Point b 
+    abscisse = 12 relative à une origine d'abscisse absolue 0
     On place l'origine en 3
-    Point a - abscisse = 0
-            relative à une origine d'abscisse absolue 3
-    Point b - abscisse = 9
-            relative à une origine d'abscisse absolue 3
+    Point a
+    abscisse = 0 relative à une origine d'abscisse absolue 3
+    Point b
+    abscisse = 9 relative à une origine d'abscisse absolue 3
