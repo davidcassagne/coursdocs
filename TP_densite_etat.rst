@@ -4,7 +4,7 @@ TD Calcul des densités d'états
 
 I - Densité d'états à 2D
 
-Pour un métal 2D de taille LxL
+Pour un métal 2D carré de taille LxL
 
 1) sur une même figure dessiner les vecteurs k
 
