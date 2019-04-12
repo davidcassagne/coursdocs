@@ -8,7 +8,7 @@ Pour un métal 2D carré de taille LxL
 
 1) sur une même figure dessiner les vecteurs k
 
-* du modèle de Hartree (ils seront identifiés par des cercles)
+* du modèle de Hartree (ils seront identifiés par des ronds)
 
 * du modèle de Sommerfeld (ils seront identifiés par des croix)
 
