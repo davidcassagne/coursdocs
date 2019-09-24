@@ -83,9 +83,10 @@ Contrairement aux listes qui sont délimitées par des crochets, on utilise des 
 
 >>> mon_dictionnaire = {"voiture": "véhicule à quatre roues", "vélo": "véhicule à deux roues"}
 
-Un élément est ici défini dans le dictionnaire en précisant une chaîne de caractères comme **clé** suivie de ``:`` puis de la valeur associée. 
+Un élément est ici défini dans le dictionnaire en précisant une chaîne de caractères comme **clé** suivie de ``:`` puis de la **valeur** associée. 
 
 On accède à la **valeur** en utilisant la **clé** entourée par des crochets avec la syntaxe suivante :
+
 >>> mon_dictionnaire["voiture"]
 'véhicule à quatre roues'
 
