@@ -25,7 +25,7 @@ Comment définir une expression booléenne qui nous permettrait de vérifier que
 
 Une approche va être de vérifier si la différence entre ``a`` et ``b`` est suffisamment petite. 
 
-On définit une certaine tolérance (par exemple ici 1e-8) et si la différence entre ``a`` et ``b``est inférieure ou égale, nous considérerons que la proximité est vérifiée. 
+On définit une certaine tolérance (par exemple ici 1e-8) et si la différence entre ``a`` et ``b`` est inférieure ou égale, nous considérerons que la proximité est vérifiée. 
 
 >>> abs(a-b) <= 1e-8
 True
@@ -47,13 +47,14 @@ Au lieu de considérer une différence absolue entre ``a`` et ``b``, nous allons
 True
 
 Au final, nous pouvons écrire un critère qui sera :
+
 >>> abs(a-b) <= (1e-8 + 1e-5 * abs(b))
 True
 
-Il se trouve que c'est ce critère qui est appliqué dans la fonction ``numpy.isclose(a, b)``
+Il se trouve que c'est ce critère qui est appliqué dans la fonction ``numpy.isclose(a, b)``.
 
 Voir :  https://docs.scipy.org/doc/numpy/reference/generated/numpy.isclose.html
 
-Dans le cas où on souhaite comparer toutes les valeurs entre deux tableaux, on utilisera la fonction ``numpy.allclose(a, b)``
+Dans le cas où on souhaite comparer toutes les valeurs entre deux tableaux, on utilisera la fonction ``numpy.allclose(a, b)``.
 
 Voir :  https://docs.scipy.org/doc/numpy/reference/generated/numpy.allclose.html
