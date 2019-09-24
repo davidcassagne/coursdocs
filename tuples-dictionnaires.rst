@@ -35,7 +35,9 @@ En fait, cela revient à :
 >>> v
 3
 
-    def test():
+::
+
+   def test():
         return 3, 4
 
 >>> a = test()
@@ -49,11 +51,15 @@ En fait, cela revient à :
 
 Comme une liste, il est possible de parcourir un tuple avec une boucle **for**.
 
-for i in a:
-    print(i)
+::
 
-3
-4
+    for i in a:
+        print(i)
+
+::
+
+    3
+    4
 
 Il est possible de récupérer la valeur d'un élément du tuple en utilisant la même syntaxe que pour une liste.  
 
@@ -109,22 +115,30 @@ Comment parcourir un dictionnaire ?
 
 **Exemple**
 
-nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
+::
 
-for i in nombre_de_roues.items():
-    print(i)
+    nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
 
-('voiture', 4)
-('vélo', 2)
-('tricycle', 3)
+    for i in nombre_de_roues.items():
+        print(i)
+
+::
+
+    ('voiture', 4)
+    ('vélo', 2)
+    ('tricycle', 3)
 
 **Autre exemple**
 
-nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
+::
 
-for cle, valeur in nombre_de_roues.items():
-    print("l'élément de clé", cle, "vaut", valeur)
+    nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
 
-l'élément de clé voiture vaut 4
-l'élément de clé vélo vaut 2
-l'élément de clé tricycle vaut 3
+    for cle, valeur in nombre_de_roues.items():
+        print("l'élément de clé", cle, "vaut", valeur)
+
+::
+
+    l'élément de clé voiture vaut 4
+    l'élément de clé vélo vaut 2
+    l'élément de clé tricycle vaut 3
