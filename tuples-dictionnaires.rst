@@ -7,9 +7,9 @@ Tuples
 
 Les tuples ressemblent aux listes, mais contrairement à elles on ne peut pas les modifier une fois qu'ils ont été créés. 
 
-On dit qu'il n'est pas *mutable*.
+On dit qu'un tuple n'est pas *mutable*.
 
-Ils sont définis avec des parenthèses.
+On le définit avec des parenthèses.
 
 >>> a = (2, 3)
 >>> type(a)
@@ -47,8 +47,6 @@ def test():
 >>> c
 4
 
-Un tuple ne peut pas être modifié après avoir été créé. On dit qu'il n'est pas *mutable*. 
-
 Comme une liste, il est possible de parcourir un tuple avec une boucle **for**.
 
 for i in a:
@@ -69,10 +67,9 @@ Dictionnaires
 
 Nous avons vu qu'il est possible de rassembler des éléments dans un liste ou un tuple.
 
-Les éléments de la liste ou du tuple sont ordonnés et on accéde à un élément grâce à sa position en utilisant un numéro qu'on a appelle l'**indice** de l'élément.
+Les éléments de la liste ou du tuple sont ordonnés et on accéde à un élément grâce à sa position en utilisant un numéro qu'on appelle l'**indice** de l'élément.
 
-Un dictionnaire en Python va également permettre de rassembler des éléments mais ils seront ici identifiés par une **clé** de la même façon que dans un dictionnaire du monde réel on accède à une définition à partir d'un mot. 
-
+Un dictionnaire en Python va également permettre de rassembler des éléments mais ceux-ci seront identifiés par une **clé** de la même façon que dans un dictionnaire de français on accède à une définition à partir d'un mot. 
 
 Contrairement aux listes qui sont délimitées par des crochets, on utilise des accolades pour les dictionnaires. 
 
@@ -82,7 +79,7 @@ Contrairement aux listes qui sont délimitées par des crochets, on utilise des 
 
 Un élément est ici défini dans le dictionnaire en précisant une chaîne de caractères comme **clé** suivie de ``:`` puis de la valeur associée. 
 
-On accède à la valeur en utilisant la clé entourée par des crochets avec la syntaxe suivante :
+On accède à la **valeur** en utilisant la **clé** entourée par des crochets avec la syntaxe suivante :
 >>> mon_dictionnaire["voiture"]
 'véhicule à quatre roues'
 
@@ -108,6 +105,9 @@ Il est aussi possible d'utiliser des valeurs d'autres types.
 2
 
 Comment parcourir un dictionnaire ?
+-----------------------------------
+
+**Exemple**
 
 nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
 
@@ -118,8 +118,7 @@ for i in nombre_de_roues.items():
 ('vélo', 2)
 ('tricycle', 3)
 
-
-Faire une page "Les structures liste, tuple et dictionnaire"
+**Autre exemple**
 
 nombre_de_roues = {"voiture": 4, "vélo": 2, "tricycle": 3}
 
