@@ -1,10 +1,10 @@
-*************************************************
-Comment vérifier l'égalité entre deux flottants ?
-*************************************************
+*****************************************************
+Comment vérifier une "égalité" entre deux flottants ?
+*****************************************************
 
 Les nombres flottants sont stockés avec un nombre fini de décimales.
 
-On peut donc se retrouver avec des valeurs qui ne sont pas strictement égales alors que l'on effectue des calculs qui devraient donner le même résultat.
+On peut donc se retrouver avec des valeurs qui ne sont pas strictement égales alors qu'on calcule des expressions qui devraient donner le même résultat.
 
 Par exemple :
 
@@ -13,24 +13,26 @@ Par exemple :
 >>> a == b
 False
 
-Mathématiquement, les expressions affectées à ``a`` et ``b`` devraient donner le même résultat. Pourtant quand on affiche ``a`` et ``b``,  on constate que les valeurs numériques ne sont pas strictement égales.
+Mathématiquement, les expressions affectées à ``a`` et ``b`` devraient donner le même résultat. 
+
+Pourtant quand on affiche ``a`` et ``b``,  on constate que les valeurs numériques ne sont pas strictement égales.
 
 >>> a
 0.6666666666666666
 >>> b
 0.6666666666666667
 
-Comment définir une expression booléenne qui nous permettrait de vérifier que ``a`` et ``b`` sont suffisamment proches ?
-------------------------------------------------------------------------------------------------------------------------
+Comment définir une expression booléenne afin de vérifier que ``a`` et ``b`` sont suffisamment proches ?
+--------------------------------------------------------------------------------------------------------
 
-Une approche va être de vérifier si la différence entre ``a`` et ``b`` est suffisamment petite. 
+La démarche va être de vérifier que la différence entre ``a`` et ``b`` est suffisamment petite. 
 
 On définit une certaine tolérance (par exemple ici 1e-8) et si la différence entre ``a`` et ``b`` est inférieure ou égale, nous considérerons que la proximité est vérifiée. 
 
 >>> abs(a-b) <= 1e-8
 True
 
-Toutefois que se passe-t-il si on prend des nombres plus grands ?
+**Toutefois que se passe-t-il si on prend des nombres plus grands ?**
 
 On étudie le cas suivant :
 
