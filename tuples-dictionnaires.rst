@@ -29,14 +29,14 @@ En fait, cela revient à :
 
 >>> (b, c) = (5, 6)
 
- >>> u, v = a
+>>> u, v = a
 >>> u
 2
 >>> v
 3
 
-def test():
-    return 3, 4
+    def test():
+        return 3, 4
 
 >>> a = test()
 >>> a
