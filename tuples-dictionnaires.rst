@@ -68,7 +68,7 @@ Il est possible de récupérer la valeur d'un élément du tuple en utilisant la
 >>> a[1]
 4
 
-**Comment créer un tuple qui contient un seul élément**
+**Comment créer un tuple qui contient un seul élément ?**
 
 Si on utilise seulement des parenthèses, on n'obtient pas le résultat escompté.
 
@@ -78,7 +78,7 @@ Si on utilise seulement des parenthèses, on n'obtient pas le résultat escompt�
 >>> type(a)
 int
 
-En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (par exemple ``3*(4+1)``.
+En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (par exemple ``3*(4+1)``).
 
 Pour créer un tuple contenant un seul élément, il faut donc utiliser une syntaxe qui contient une virgule.
 
