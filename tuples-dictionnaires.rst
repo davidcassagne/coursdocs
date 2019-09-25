@@ -68,6 +68,35 @@ Il est possible de récupérer la valeur d'un élément du tuple en utilisant la
 >>> a[1]
 4
 
+**Comment créer un tuple qui contient un seul élément**
+
+Si on utilise seulement des parenthèses, on n'obtient pas le résultat escompté.
+
+>>> a = (3)
+>>> a
+3
+>>> type(a)
+int
+
+En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (par exemple ``3*(4+1)``.
+
+Pour créer un tuple contenant un seul élément, il faut donc utiliser une syntaxe qui contient une virgule.
+
+>>> b = (3,)
+>>> b
+(3,)
+>>> type(b)
+<class 'tuple'>
+
+Si on veut récupérer l'unique valeur présente dans le tuple, on va pouvoir utiliser les approches suivantes :
+
+>>> c = b[0]
+>>> c
+3
+>>> d, = b
+>>> d
+3
+
 Dictionnaires
 =============
 
