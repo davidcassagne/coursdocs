@@ -15,7 +15,7 @@ On le définit avec des parenthèses.
 >>> type(a)
 <class 'tuple'>
  
-Parfois, les tuples ne sont pas entourés de parenthèses, même s'il s'agit en fait de tuples.
+Parfois, les tuples ne sont pas entourés de parenthèses, même s'il s'agit quand même de tuples.
 
 Ainsi, on peut utiliser la notation suivante :
 
