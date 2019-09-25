@@ -133,27 +133,35 @@ Contrairement aux listes qui sont délimitées par des crochets, on utilise des 
 
 >>> mon_dictionnaire = {"voiture": "véhicule à quatre roues", "vélo": "véhicule à deux roues"}
 
-Un élément est ici défini dans le dictionnaire en précisant une chaîne de caractères comme **clé** suivie de ``:`` puis de la **valeur** associée. 
+**Comment construire une entrée dans le dictionnaire ?**
 
-On accède à la **valeur** en utilisant la **clé** entourée par des crochets avec la syntaxe suivante :
+Un élément a été défini ci-dessus dans le dictionnaire en précisant une **clé** au moyen d'une chaîne de caractères suivie de ``:`` puis de la **valeur** associée. 
+
+**cle: valeur**
+
+On accède à une **valeur** du dictionnaire en utilisant la **clé** entourée par des crochets avec la syntaxe suivante :
 
 >>> mon_dictionnaire["voiture"]
 'véhicule à quatre roues'
+
+Il est très facile d'ajouter un élément à un dictionnaire. Il suffit d'affecter une **valeur** pour la nouvelle **clé**. 
+
+>>> mon_dictionnaire["tricycle"] = "véhicule à trois roues"
+
+>>> mon_dictionnaire
+{'voiture': 'véhicule à quatre roues',
+'vélo': 'véhicule à deux roues',
+'tricycle': 'véhicule à trois roues'}
+
 
 Le *type* d'un dictionnaire est ``dict``.
 
 >>> type(mon_dictionnaire)
 <class 'dict'>
 
-Il est très facile d'ajouter un élément à une liste. Il suffit d'affecter une valeur pour la nouvelle clé. 
-
->>> mon_dictionnaire["tricycle"] = "véhicule à trois roues"
->>> mon_dictionnaire
-{'voiture': 'véhicule à quatre roues',
-'vélo': 'véhicule à deux roues',
-'tricycle': 'véhicule à trois roues'}
-
 Il est aussi possible d'utiliser des valeurs d'autres types.
+
+Voici un exemple où les valeurs sont des entiers.
 
 >>> nombre_de_roues = {"voiture": 4, "vélo": 2}
 >>> type(nombre_de_roues)
