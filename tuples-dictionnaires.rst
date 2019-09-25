@@ -11,7 +11,7 @@ On dit qu'un tuple n'est pas *mutable*.
 
 On le définit avec des parenthèses.
 
->>> a = (2, 3)
+>>> a = (3, 4, 7)
 >>> type(a)
 <class 'tuple'>
  
@@ -29,11 +29,16 @@ En fait, cela revient à :
 
 >>> (b, c) = (5, 6)
 
+Cette syntaxe avec plusieurs variables à gauche du signe ``=`` peut aussi être utilisée avec une variable unique à droite si celle-ci contient un tuple.
+
+>>> a = (3, 4)
 >>> u, v = a
 >>> u
 2
 >>> v
 3
+
+On peut aussi avoir une fonction qui renvoie un tuple.
 
 ::
 
@@ -61,7 +66,7 @@ Comme une liste, il est possible de parcourir un tuple avec une boucle **for**.
     3
     4
 
-Il est possible de récupérer la valeur d'un élément du tuple en utilisant la même syntaxe que pour une liste.  
+La valeur d'un élément du tuple est obtenue en utilisant la même syntaxe que pour une liste.  
 
 >>> a[0]
 3
@@ -78,9 +83,9 @@ Si on utilise seulement des parenthèses, on n'obtient pas le résultat escompt�
 >>> type(a)
 int
 
-En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (par exemple ``3*(4+1)``).
+En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (comme par exemple dans ``3*(4+1)``).
 
-Pour créer un tuple contenant un seul élément, il faut donc utiliser une syntaxe qui contient une virgule.
+Pour créer un tuple contenant un seul élément, il faut donc utiliser une syntaxe spécifique qui contient une virgule.
 
 >>> b = (3,)
 >>> b
@@ -90,9 +95,14 @@ Pour créer un tuple contenant un seul élément, il faut donc utiliser une synt
 
 Si on veut récupérer l'unique valeur présente dans le tuple, on va pouvoir utiliser les approches suivantes :
 
+*Première approche*
+
 >>> c = b[0]
 >>> c
 3
+
+*Deuxième approche*
+
 >>> d, = b
 >>> d
 3
