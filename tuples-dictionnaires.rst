@@ -61,6 +61,8 @@ Comme une liste, il est possible de parcourir un tuple avec une boucle **for**.
     for i in a:
         print(i)
 
+*Résultat*
+
 ::
 
     3
@@ -83,7 +85,7 @@ Si on utilise seulement des parenthèses, on n'obtient pas le résultat escompt�
 >>> type(a)
 int
 
-En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique (comme par exemple dans ``3*(4+1)``).
+En effet, les parenthèses sont alors considérées comme celles d'une expression mathématique, comme par exemple dans ``3*(4+1)``.
 
 Pour créer un tuple contenant un seul élément, il faut donc utiliser une syntaxe spécifique qui contient une virgule.
 
@@ -186,6 +188,7 @@ Comment parcourir un dictionnaire ?
     for cle, valeur in nombre_de_roues.items():
         print("l'élément de clé", cle, "vaut", valeur)
 
+*Résultat*
 ::
 
     l'élément de clé voiture vaut 4
