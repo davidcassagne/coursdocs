@@ -97,6 +97,15 @@ Si on veut récupérer l'unique valeur présente dans le tuple, on va pouvoir ut
 >>> d
 3
 
+La deuxième approche avec une virgule ``d, = b`` est plus légère que la syntaxe qui utilise des crochets ``c = b[0]``.
+
+Il est possible d'utiliser la syntaxe ``nom_de_variable, =`` aussi avec une liste à un élément.
+
+>>> u = [5]
+>>> v, = u
+>>> v
+5
+
 Dictionnaires
 =============
 
