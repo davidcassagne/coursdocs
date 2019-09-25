@@ -135,9 +135,9 @@ Contrairement aux listes qui sont délimitées par des crochets, on utilise des 
 
 **Comment construire une entrée dans le dictionnaire ?**
 
-Un élément a été défini ci-dessus dans le dictionnaire en précisant une **clé** au moyen d'une chaîne de caractères suivie de ``:`` puis de la **valeur** associée. 
+Un élément a été défini ci-dessus dans le dictionnaire en précisant une **clé** au moyen d'une chaîne de caractères suivie de ``:`` puis de la **valeur** associée 
 
-**cle: valeur**
+*cle*: *valeur*
 
 On accède à une **valeur** du dictionnaire en utilisant la **clé** entourée par des crochets avec la syntaxe suivante :
 
