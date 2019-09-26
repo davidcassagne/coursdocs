@@ -21,7 +21,7 @@ Nous disposons de la classe de base suivante :
         def affiche(self):
             print("Je suis un point de coordonnees", self.x, self.y)
 
-Nous allons créer une classe ``PointCol`` qui sera dérivée de ``Point`` et qui disposera d'un attribut ``couleur`` et de deux méthodes ``colore()`` et ``affiche_couleur`` supplémentaires. 
+Nous allons créer une classe ``PointCol`` qui sera dérivée de ``Point`` et qui disposera d'un attribut ``couleur`` et de deux méthodes ``colore()`` et ``affiche_couleur()`` supplémentaires. 
 
 ::
 
@@ -54,7 +54,7 @@ Nous allons créer une classe ``PointCol`` qui sera dérivée de ``Point`` et qu
     p = Point(6, 9)
     p.affiche()
     
-On constate qu'un objet de type ``PointCol`` dispose du constructeur de la classe ``Point``, ainsi que des attributs ``x```et ``y`` et des méthodes ``deplace()`` et ``affiche()``.
+On constate qu'un objet de type ``PointCol`` dispose du constructeur de la classe ``Point``, ainsi que des attributs ``x`` et ``y`` et des méthodes ``deplace()`` et ``affiche()``.
 
 On dit ainsi qu'**un objet d'une classe dérivée peut accéder aux membres (attributs et méthodes) de sa classe de base**.
 
