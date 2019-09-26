@@ -35,9 +35,9 @@ Exercice 2 : Création et utilisation d'une classe simple
                                                                                                                                               
 Réaliser une classe PointAxe permettant de représenter un point sur un axe. Chaque point sera caractérisé par un nom et une abscisse. On prévoira :
 
-    * un constructeur recevant en arguments le nom et l'abscisse d'un point,
-    * une méthode affiche qui affiche le nom du point et son abscisse,
-    * une méthode translate effectuant une translation définie par la valeur de son argument.
+* un constructeur recevant en arguments le nom et l'abscisse d'un point,
+* une méthode affiche qui affiche le nom du point et son abscisse,
+* une méthode translate effectuant une translation définie par la valeur de son argument.
 
 Dans une fichier nommé test_point_axe.py, écrire un petit programme utilisant cette classe pour créer un point, en afficher les caractéristiques, le déplacer et en afficher à nouveau les caractéristiques.
 
@@ -59,7 +59,7 @@ Ecrire une classe ``Point`` qui pourra être utilisée avec le programme princip
     b = Point('B',6)
     b.affiche()
     a.set_origine(2)
-    print("On place l'origine en", a.get_origine()
+    print("On a placé l'origine en", a.get_origine())
     a.affiche()
     b.affiche()
 
@@ -71,7 +71,7 @@ Ecrire une classe ``Point`` qui pourra être utilisée avec le programme princip
             relative à une origine d'abscisse absolue 0
     Point B - abscisse = 6
             relative à une origine d'abscisse absolue 0
-    On place l'origine en 2
+    On a placé l'origine en 2
     Point A - abscisse = 1
             relative à une origine d'abscisse absolue 2
     Point B - abscisse = 4
