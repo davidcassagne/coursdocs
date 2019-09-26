@@ -50,14 +50,29 @@ Dans un fichier nommé axe_et_origine.py, créer une classe permettant de manipu
 * ``set_origine(valeur)`` qui permet de définir une nouvelle abscisse pour l'origine (exprimée de façon absolue et non par rapport à l'origine courante),
 * ``get_origine()`` qui permet d'obtenir l'abscisse de l'origine courante.
 
-Ecrire un petit programme de test qui utilise set_origine en tant que méthode de classe et qui fournit les résultats suivants::
+Ecrire une classe ``Point`` qui pourra être utilisée avec le programme principal ci-dessous et donnera le résultat suivant.
+
+::
+
+    a = Point('A',3)
+    a.affiche()
+    b = Point('B',6)
+    b.affiche()
+    a.set_origine(2)
+    print("On place l'origine en", a.get_origine()
+    a.affiche()
+    b.affiche()
+
+*Résultat*
+
+::
 
     Point A - abscisse = 3
             relative à une origine d'abscisse absolue 0
-    Point B - abscisse = 12
+    Point B - abscisse = 6
             relative à une origine d'abscisse absolue 0
-    On place l'origine en 3
-    Point A - abscisse = 0
-            relative à une origine d'abscisse absolue 3
-    Point B - abscisse = 9
-            relative à une origine d'abscisse absolue 3
+    On place l'origine en 2
+    Point A - abscisse = 1
+            relative à une origine d'abscisse absolue 2
+    Point B - abscisse = 4
+            relative à une origine d'abscisse absolue 2
