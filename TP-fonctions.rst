@@ -27,13 +27,13 @@ TP Fonctions
 
    ::
 
-       serie = [5, 8, 2, 1, 9, 3, 6, 7]
+       serie = [5, 8, 2, 1, 9, 3, 6, 7, 9, 3]
        i = index_max(serie) 
        print("Résultat :", i)
 
    ::
 
-       Résultat : 4
+       Résultat : 8
 
 Ces exercices sont en partie extraits du livre **Apprendre à programmer avec Python** de *Gérard Swinnen* disponible en licence `Creative Commons BY-NC-SA 2.0 FR <http://creativecommons.org/licenses/by-nc-sa/2.0/fr/>`_ 
 Paternité - Pas d'utilisation commerciale - Partage des conditions initiales à l'identique.
