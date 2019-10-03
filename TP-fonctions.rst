@@ -21,7 +21,7 @@ TP Fonctions
 
       132.13
 
-#. Définissez une fonction ``index_max(liste)`` qui renvoie l'indice de l'élément ayant la valeur la plus élevée dans la liste transmise en argument. Si le même élément apparaît plusieurs fois, l'indice renvoyé est celui de la dernière occurence.
+#. Définissez une fonction ``index_max(liste)`` qui renvoie l'indice de l'élément ayant la valeur la plus élevée dans la liste transmise en argument. Si le même élément apparaît plusieurs fois, l'indice renvoyé est celui de la **dernière occurence**.
 
    **Exemple d'utilisation :**
 
