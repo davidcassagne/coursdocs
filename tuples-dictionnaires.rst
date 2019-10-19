@@ -5,11 +5,15 @@ Tuples et dictionnaires
 Tuples
 ======
 
-Les tuples ressemblent aux listes, mais contrairement à elles on ne peut pas les modifier une fois qu'ils ont été créés. 
+A partir des types de base (*int*, *float*, etc.), il est possible d'en élaborer de nouveaux. On les appelle des *types construits*. 
+
+Un exemple de *type construit* est le **tuple**. Il permet de créer une **collection ordonnée de plusieurs éléments**. En mathématiques, on parle de **p-uplet**. Par exemple, un quadruplet est constitué de 4 éléments.
+
+Les tuples ressemblent aux listes, mais on ne peut pas les modifier une fois qu'ils ont été créés. 
 
 On dit qu'un tuple n'est pas *mutable*.
 
-On le définit avec des parenthèses.
+On le définit avec des **parenthèses**.
 
 >>> a = (3, 4, 7)
 >>> type(a)
@@ -38,7 +42,9 @@ Cette syntaxe avec plusieurs variables à gauche du signe ``=`` peut aussi être
 >>> v
 3
 
-On peut aussi avoir une fonction qui renvoie un tuple.
+**Comment écrire une fonction qui renvoie un p-uplet de valeurs ?**
+
+Il est très facile de créer une fonction qui renvoie un tuple. Il suffit d'indiquer ce tuple après ``return``.
 
 ::
 
@@ -53,6 +59,12 @@ On peut aussi avoir une fonction qui renvoie un tuple.
 3
 >>> c
 4
+
+..note::
+
+   Après ``return``, il aurait aussi été possible d'utiliser une notation avec des parenthèses pour le tuple, par exemple ``return (3, 4)``
+   
+**Comment itérer sur les éléments d'un tuple ?**   
 
 Comme une liste, il est possible de parcourir un tuple avec une boucle **for**.
 
