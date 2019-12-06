@@ -139,7 +139,7 @@ Les éléments de la liste ou du tuple sont ordonnés et on accéde à un élém
 
 Un dictionnaire en Python va également permettre de rassembler des éléments mais ceux-ci seront identifiés par une **clé** de la même façon que dans un dictionnaire de français on accède à une définition à partir d'un mot. 
 
-Contrairement aux listes qui sont délimitées par des crochets, on utilise des accolades pour les dictionnaires. 
+Contrairement aux listes qui sont délimitées par des crochets, on utilise des **accolades** pour les dictionnaires. 
 
 **Exemple**
 
@@ -180,6 +180,17 @@ Voici un exemple où les valeurs sont des entiers.
 <class 'dict'>
 >>> nombre_de_roues["vélo"]
 2
+
+Comment créer un dictionnaire ?
+-------------------------------
+
+Nous avons vu ci-dessous qu'il était possible de créer un dictionnaire avec des accolades qui entourent la définion des éléments. Une autre approche possible consiste à créer un dictionnaire vide et à ajouter les éléments au fur et à mesure.
+
+**Exemple**
+
+>>> nombre_de_roues = {}
+>>> nombre_de_roues["voiture"] = 4
+>>> nombre_de_roues["vélo"] = 2
 
 Comment parcourir un dictionnaire ?
 -----------------------------------
