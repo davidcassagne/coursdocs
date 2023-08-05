@@ -70,3 +70,28 @@ Il est important de noter que le choix de $h$ peut influencer la précision de v
 
 Les méthodes de différences finies offrent une approche simple pour estimer numériquement les dérivées. En pratique, il est essentiel d'expérimenter avec différentes valeurs de $h$ pour obtenir un bon équilibre entre précision et stabilité.
 
+## Version complète du programme
+
+```python
+def forward_difference(f, x, h=1e-5):
+    """Calcule la dérivée à l'aide de la différence finie avant."""
+    return (f(x + h) - f(x)) / h
+
+def backward_difference(f, x, h=1e-5):
+    """Calcule la dérivée à l'aide de la différence finie arrière."""
+    return (f(x) - f(x - h)) / h
+
+def central_difference(f, x, h=1e-5):
+    """Calcule la dérivée à l'aide de la différence finie centrale."""
+    return (f(x + h) - f(x - h)) / (2 * h)
+
+# Test des fonctions
+def f(x):
+    return x**2
+
+x = 1
+
+print("Dérivée avec différence finie avant:", forward_difference(f, x))
+print("Dérivée avec différence finie arrière:", backward_difference(f, x))
+print("Dérivée avec différence finie centrale:", central_difference(f, x))
+```
