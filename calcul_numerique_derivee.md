@@ -16,9 +16,9 @@ $f'(x) \approx \frac{f(x + h) - f(x)}{h}$
 
 $f'(x) \approx \frac{f(x) - f(x - h)}{h}$
 
-### 1.3 Dérivée à l'aide de la différence finie centrale (Central Difference)
+### 1.3 Dérivée à l'aide de la différence finie centrée (Central Difference)
 
-$f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}$
+$f'(x) \approx \frac{f(x + \frac{h}{2}) - f(x - \frac{h}{2})}{h}$
 
 où $h$ est un petit intervalle. 
 
@@ -38,11 +38,11 @@ def backward_difference(f, x, h=1e-5):
     return (f(x) - f(x - h)) / h
 ```
 
-### 2.3 Exemple de code pour la différence finie centrale:
+### 2.3 Exemple de code pour la différence finie centrée:
 
 ```python
 def central_difference(f, x, h=1e-5):
-    return (f(x + h) - f(x - h)) / (2 * h)
+    return (f(x + h/2) - f(x - h/2)) / h
 ```
 
 ## 3. Exemples:
@@ -82,8 +82,8 @@ def backward_difference(f, x, h=1e-5):
     return (f(x) - f(x - h)) / h
 
 def central_difference(f, x, h=1e-5):
-    """Calcule la dérivée à l'aide de la différence finie centrale."""
-    return (f(x + h) - f(x - h)) / (2 * h)
+    """Calcule la dérivée à l'aide de la différence finie centrée."""
+    return (f(x + h/2) - f(x - h/2)) / h
 
 # Test des fonctions
 def f(x):
