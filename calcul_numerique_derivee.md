@@ -93,5 +93,5 @@ x = 1
 
 print("Dérivée avec différence finie avant:", forward_difference(f, x))
 print("Dérivée avec différence finie arrière:", backward_difference(f, x))
-print("Dérivée avec différence finie centrale:", central_difference(f, x))
+print("Dérivée avec différence finie centrée:", central_difference(f, x))
 ```
