@@ -21,7 +21,7 @@ Nous disposons de la classe de base suivante :
         def affiche(self):
             print("Je suis un point de coordonnees", self.x, self.y)
 
-Nous allons créer une classe ``PointCol`` qui sera dérivée de ``Point`` et qui disposera d'un attribut ``couleur`` et de deux méthodes ``colore()`` et ``affiche_couleur()`` supplémentaires. 
+Nous allons créer une classe :class:`PointCol` qui sera dérivée de ``Point`` et qui disposera d'un attribut ``couleur`` et de deux méthodes ``colore()`` et ``affiche_couleur()`` supplémentaires. 
 
 ::
 
