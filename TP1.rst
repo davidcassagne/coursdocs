@@ -2,9 +2,9 @@
 TP 1
 ****
 
-#. Écrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7.
+#. Écrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7.
 
-#. Écrivez un programme qui affiche une table de conversion de sommes d'argent exprimées en euros, en dollars canadiens. La progression des sommes de la table sera « géométrique », comme dans l'exemple ci-dessous :
+#. Écrire un programme qui affiche une table de conversion de sommes d'argent exprimées en euros, en dollars canadiens. La progression des sommes de la table sera « géométrique », comme dans l'exemple ci-dessous :
 
    ::
 
@@ -14,17 +14,17 @@ TP 1
         8 euro(s) = 13.20 dollar(s)
         etc. (S'arrêter à 16384 euros)
 
-#. Écrivez un programme qui affiche une suite de 12 nombres dont chaque terme est égal au triple du terme précédent.
+#. Écrire un programme qui affiche une suite de 12 nombres dont chaque terme est égal au triple du terme précédent.
 
-#. Ecrivez un programme qui calcule le volume d'un parallélépipède rectangle pour lequel sont fournis au départ la largeur, la hauteur et la profondeur.
+#. Ecrire un programme qui calcule le volume d'un parallélépipède rectangle pour lequel sont fournis au départ la largeur, la hauteur et la profondeur.
 
-#. Ecrivez un programme qui convertisse un nombre entier de secondes fourni au départ, en un nombre de jours, d'heures, de minutes et de secondes (utilisez l'opérateur modulo : %).
+#. Ecrire un programme qui convertisse un nombre entier de secondes fourni au départ, en un nombre de jours, d'heures, de minutes et de secondes (utilisez l'opérateur modulo : %).
 
-#. Ecrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7, en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
+#. Ecrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7, en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
 
    Exemple : 7 14 21 * 28 35 42 * 49
 
-#. Ecrivez un programme qui affiche la suite de chiffres suivante :
+#. Ecrire un programme qui affiche la suite de chiffres suivante :
 
    ::
 
@@ -37,7 +37,7 @@ TP 1
        1 2 3 4 5 6 7
        
 
-#. Ecrivez un programme qui affiche la suite de chiffres suivante :
+#. Ecrire un programme qui affiche la suite de chiffres suivante :
 
    ::
 
