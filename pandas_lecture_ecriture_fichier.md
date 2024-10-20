@@ -1,4 +1,4 @@
-### Utilisation de Pandas pour Lire et Écrire des Données dans un Fichier
+### Utilisation de Pandas pour lire et écrire des données dans un fichier
 
 #### Introduction à Pandas
 
