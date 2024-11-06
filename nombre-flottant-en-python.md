@@ -1,4 +1,4 @@
-Nous allons aborder un aspect fondamental de la programmation en Python : la représentation des nombres flottants en mémoire. Cette compréhension est essentielle pour éviter certaines erreurs courantes, notamment lors de calculs de précision.
+# Représentation des nombres flottants en mémoire pour Python
 
 ## 1. Qu’est-ce qu'un nombre flottant ?
 
@@ -6,7 +6,7 @@ En informatique, les nombres de type `float` représentent les nombres à virgul
 
 ## 2. La norme IEEE 754
 
-Les valeurs flottantes en Python sont stockées en suivant la norme IEEE 754, qui définit une méthode de représentation en mémoire pour les nombres en virgule flottante. Python utilise des "doubles" de précision pour les nombres flottants, ce qui signifie que chaque nombre de type `float` est représenté par **64 bits** en mémoire.
+Les valeurs flottantes en Python sont stockées en suivant la norme IEEE 754, qui définit une méthode de représentation en mémoire pour les nombres en virgule flottante. Python utilise des "doubles" de précision pour les nombres flottants, ce qui signifie que chaque nombre de type `float` est représenté par **64 bits** en mémoire (c'est-à-dire 8 octets).
 
 ### Répartition des bits en IEEE 754
 
@@ -32,12 +32,122 @@ Les nombres flottants peuvent représenter une très grande plage de valeurs, ma
 
 Toutefois, la limite de cette précision peut parfois engendrer des erreurs de calcul dues à des "artéfacts de précision". Par exemple, certaines opérations comme `0.1 + 0.2` ne donnent pas exactement `0.3` en raison des limitations de la représentation binaire en mémoire.
 
-## 4. Quelques points importants à retenir
+# Exemples de conversion en représentation binaire
 
-- En Python, un `float` occupe toujours **64 bits** en mémoire.
-- Il suit la norme **IEEE 754**, avec 1 bit pour le signe, 11 bits pour l'exposant, et 52 bits pour la mantisse.
-- Les limitations de précision sont inhérentes à la représentation binaire et peuvent engendrer des petites erreurs dans les calculs.
+Voici un programme Python qui convertit une valeur `float` en sa représentation binaire, en respectant la norme IEEE 754 pour les nombres flottants en double précision (64 bits). Ce programme décompose le nombre flottant en ses trois composantes : le signe, l'exposant et la mantisse.
 
-### Conclusion
+```python
+import struct
+import numpy as np
 
-Les nombres flottants sont un outil puissant pour représenter des valeurs décimales en informatique. Cependant, il est crucial de bien comprendre leur structure et leurs limites pour éviter des erreurs de calcul.
+def float_to_binary(num):
+    # On utilise la bibliothèque struct pour obtenir l'équivalent binaire d'un float en IEEE 754
+    # ">d" signifie un double (64 bits) avec un big-endian (ordre des octets)
+    packed_num = struct.pack('>d', num)
+    # Convertir les octets en un nombre binaire de 64 bits
+    binary_num = ''.join(f'{byte:08b}' for byte in packed_num)
+
+    # Récupérer les composants
+    sign = binary_num[0]  # Premier bit pour le signe
+    exponent = binary_num[1:12]  # 11 bits suivants pour l'exposant
+    mantissa = binary_num[12:]  # 52 bits restants pour la mantisse
+
+    # Affichage des résultats
+    print(f"Nombre flottant: {num}")
+    print(f"Signe: {sign}")
+    print(f"Exposant: {exponent} (en binaire)")
+    print(f"Mantisse: {mantissa} (en binaire)")
+    
+    return sign, exponent, mantissa
+
+# Exemple d'utilisation
+float_number = 5.75
+float_to_binary(float_number)
+
+one = 1.0
+float_to_binary(one)
+
+epsilon = np.finfo(float).eps
+print(f"epsilon vaut {epsilon}")
+float_to_binary(one+epsilon)
+```
+
+Ce programme affiche :
+
+```
+Nombre flottant: 5.75
+Signe: 0
+Exposant: 10000000001 (en binaire)
+Mantisse: 0111000000000000000000000000000000000000000000000000 (en binaire)
+Nombre flottant: 1.0
+Signe: 0
+Exposant: 01111111111 (en binaire)
+Mantisse: 0000000000000000000000000000000000000000000000000000 (en binaire)
+epsilon vaut 2.220446049250313e-16
+Nombre flottant: 1.0000000000000002
+Signe: 0
+Exposant: 01111111111 (en binaire)
+Mantisse: 0000000000000000000000000000000000000000000000000001 (en binaire)
+```
+
+## Explications du code
+
+1. **struct.pack('>d', num)** : On utilise le format `'>d'` pour convertir le nombre flottant `num` en une séquence de 8 octets (64 bits), correspondant à sa représentation IEEE 754.
+2. **binary_num** : On convertit chaque octet en une chaîne binaire de 8 bits et on les joint pour obtenir une représentation binaire de 64 bits.
+3. **Signe, exposant et mantisse** : Une fois la chaîne de 64 bits obtenue, on sépare les bits :
+   - **Signe** : Le premier bit
+   - **Exposant** : Les 11 bits suivants
+   - **Mantisse** : Les 52 bits restants
+
+Lorsque vous exécutez ce code avec une valeur comme `5.75`, le programme affichera les valeurs en binaire pour le signe, l'exposant et la mantisse, permettant de visualiser la structure du nombre en mémoire.
+
+Pour comprendre comment la valeur flottante `1.0` est représentée en mémoire selon la norme IEEE 754, nous devons examiner la manière dont Python et d'autres langages stockent les nombres flottants en utilisant cette norme.
+
+Rappelons que dans la norme IEEE 754 pour les flottants en double précision (64 bits), les 64 bits sont répartis comme suit :
+
+1. **Signe** : 1 bit
+2. **Exposant** : 11 bits
+3. **Mantisse** : 52 bits
+
+## Explication de la représentation de la valeur `1.0`.
+
+### Étape 1 : Calcul du signe
+
+Puisque `1.0` est un nombre positif, le bit de signe sera `0`.
+
+### Étape 2 : Calcul de l'exposant
+
+L’exposant, qui utilise 11 bits, est stocké en "exposant biaisé". En double précision, l'exposant est biaisé avec une valeur de **1023**. 
+
+Le calcul de l’exposant pour la valeur `1.0` est donc le suivant :
+
+1. On écrit `1.0` en notation scientifique binaire : $1.0 = 1 \times 2^0$.
+2. L'exposant est donc $0$.
+3. Pour obtenir l'exposant biaisé, on ajoute 1023 :  
+   $$0 + 1023 = 1023$$
+
+En binaire, 1023 est représenté par `01111111111` sur 11 bits.
+
+### Étape 3 : Calcul de la mantisse
+
+La mantisse (ou fraction significative) est la partie binaire qui suit la virgule. Dans la norme IEEE 754, la mantisse est toujours normalisée, ce qui signifie qu’elle est stockée sous la forme $1.0xxx\ldots$ avec le bit implicite `1` qui n'est pas enregistré. 
+
+Pour `1.0`, on n'a pas de décimale autre que le `1` de départ, donc tous les bits de la mantisse seront `0`.
+
+### Résumé de la représentation binaire de 1.0
+
+En rassemblant les trois composants, la représentation IEEE 754 pour `1.0` est donc :
+
+- **Signe** : `0`
+- **Exposant** : `01111111111` (soit 1023 en décimal)
+- **Mantisse** : `0000000000000000000000000000000000000000000000000000`
+
+Ainsi, la valeur `1.0` est représentée en binaire par cette séquence de 64 bits :
+```
+0 01111111111 0000000000000000000000000000000000000000000000000000
+```
+
+Ce format permet de stocker `1.0` en respectant la norme IEEE 754 pour les flottants en double précision.
+
+`np.finfo(float).eps` correspond à la différence entre 1.0 et le plus proche flottant représentable plus grand que 1.0. Par exemple, pour des flottants de 64 bits dans le standard IEEE-754, eps = 2**-52, approximativement 2.22e-16.
+
