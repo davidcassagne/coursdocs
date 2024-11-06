@@ -20,7 +20,7 @@ La norme IEEE 754 divise ces 64 bits en trois parties :
 
 ### Exemple de représentation
 
-Imaginons que nous ayons un nombre flottant de type double, comme 5.75. En mémoire, il serait stocké de la manière suivante :
+Imaginons que nous ayons un nombre flottant en double précision, comme 5.75. En mémoire, il serait stocké de la manière suivante :
 
 - **Signe** : 0 (positif)
 - **Exposant** : 10000000001 (correspond à l'exposant de 1025 - 1023 = 2)
