@@ -14,7 +14,7 @@ La norme IEEE 754 divise ces 64 bits en trois parties :
 
 1. **Signe (1 bit)** : Ce bit indique si le nombre est positif ou négatif. Il vaut 0 pour les nombres positifs et 1 pour les nombres négatifs.
    
-2. **Exposant (11 bits)** : Il permet de "déplacer" la virgule pour représenter des valeurs très grandes ou très petites. L'exposant est stocké sous forme de "bias", ce qui signifie qu'on lui ajoute une valeur constante (dans le cas des doubles, cette constante est 1023). Par exemple, un exposant binaire de 00000000000 représente -1023.
+2. **Exposant (11 bits)** : Il permet de "déplacer" la virgule pour représenter des valeurs très grandes ou très petites. L'exposant est stocké sous forme de "bias", ce qui signifie qu'on lui ajoute une valeur constante (dans le cas des flottants en double précision, cette constante est 1023). Par exemple, un exposant binaire de 00000000000 représente -1023.
 
 3. **Mantisse (52 bits)** : C’est la partie fractionnaire du nombre. La mantisse contient les chiffres qui constituent le nombre, et elle est normalisée. Cela signifie que le premier bit de la mantisse est implicite et considéré comme 1 pour les nombres normaux.
 
