@@ -98,6 +98,43 @@ La fonction `FuncAnimation()` dispose d'un argument avec une étiquette appelée
 > **Note**
 > La fonction `animate()` est identique dans les deux styles : elle agit directement sur l'objet `line` renvoyé par `plot()`, grâce à sa méthode `set_data()`.
 
+**Exemple : animation du titre**
+
+Le style « Orienté Objet » donne accès à l'objet `ax` à l'intérieur de la fonction `animate()`. On peut ainsi mettre à jour le titre à chaque image, par exemple pour afficher le numéro de l'image.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+
+k = 2*np.pi
+w = 2*np.pi
+dt = 0.01
+
+xmin = 0
+xmax = 3
+nbx = 151
+
+x = np.linspace(xmin, xmax, nbx)
+
+fig, ax = plt.subplots()
+line, = ax.plot([], [])
+ax.set_xlim(xmin, xmax)
+ax.set_ylim(-1, 1)
+
+def animate(i):
+    t = i * dt
+    y = np.cos(k*x - w*t)
+    line.set_data(x, y)
+    ax.set_title(f"image {i}")
+    return line,
+
+# ici blit=False est necessaire pour que le titre soit bien mis a jour
+ani = animation.FuncAnimation(fig, animate, frames=100,
+                              interval=1, blit=False, repeat=False)
+plt.show()
+```
+
 **Ancien exemple**
 
 Nous présentons ici une approche qui se retrouve dans de nombreux anciens exemples disponibles sur internet.
